@@ -18,7 +18,8 @@ int readMeterValue(char * str)
 void determineUsage(int begMeterValue, int endMeterValue)
 {
   double usage = (endMeterValue - begMeterValue)/10;
-  return 
+  scanf("%lf", &usage);
+  return 0;
 }
 
 char readCustomerCode(char customerCode)
@@ -29,6 +30,21 @@ char readCustomerCode(char customerCode)
   if (customerCode == 'r' == 'R')
   
   return readCustomerCode;
+}
+
+double determineCost(double usage, char customerCode)
+{
+
+}
+
+void printResults(double cost, double usage, char customerCode, int begMeterValue, int endMeterValue)
+{
+  printf("The customer's code is : %d\n", &customerCode );
+  printf("The customer's meter reading at the beginning of the month was %d\n", &begMeterValue);
+  printf("The customer's meter reading at the beginning of the month was %d\n", &endMeterValue);
+  printf("The amount of water the customer used is %.1lf \n", &usage);
+
+  
 }
 
 

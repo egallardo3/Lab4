@@ -8,6 +8,6 @@ int readMeterValue(char * str);
 void determineUsage(int begMeterValue, int endMeterValue);
 double determineCost(double usage, char customerCode);
 char readCustomerCode(char customerCode);
-
+double determineCost(double usage, char customerCode);
 
 #endif
